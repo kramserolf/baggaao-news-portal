@@ -117,10 +117,10 @@ header .navbar li a {
 #facebook{
 	text-align: center;
 }
-#facebook .fb-page {
+/*#facebook .fb-page {
 	width: 380px;
 	height: auto;
-}
+}*/
 /*media queries*/
 @media only screen and (max-width: 568px){
 	/*section navbar*/
