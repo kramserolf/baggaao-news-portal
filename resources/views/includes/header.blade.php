@@ -1,4 +1,4 @@
-<header id="home" style="background-image: url({{asset('img/background.png')}});">
+<header id="home" data-background-image="{{asset('img/background.png')}}" class="lozad">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-sm navbar-dark position-fixed fixed-top mb-4 nav-up" id="navbar-header">
       <img src="{{asset('img/lgu-logo.png')}}" alt="LGU Baggao Logo" id="lgu-logo">
@@ -67,3 +67,7 @@
       </div>
   </nav>
 </header>
+<script type="text/javascript">
+  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+  observer.observe();
+</script>
