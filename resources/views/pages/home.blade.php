@@ -1,0 +1,37 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+				  <li class="breadcrumb-item"><a href="{{route('all.news')}}"><i class="fa fa-bullhorn mr-1"></i>News</a></li>
+				  <li class="breadcrumb-item active" aria-current="page">Latest</li>
+				</ol>
+			</nav>
+			@foreach($news as $row)
+			<div class="row border-bottom pb-4 mb-4">
+			<div class="col-sm-5">
+				<img src="{{asset('img/news/')}}/{{$row->image}}">
+			</div>
+			<div class="col-sm-7">
+				<span class="news-title">
+					{{$row->title}}
+				</span>
+				<blockquote class="blockquote-footer">{{$row->created_at}}
+				</blockquote>
+				<p class="news-content">
+					{{Str::limit($row->content, $limit = 100, $end = '...')}}
+				</p>
+				<a href="/news/{{$row->id}}" target="_blank" class="btn btn-primary btn-sm">Continue reading<i class="fa fa-arrow-right ml-1"></i></a>
+			</div>
+			</div>
+			@endforeach
+		<div class="text-right see-all">
+			<a href="{{route('all.news')}}" target="_blank" type="button" class="btn btn-primary btn-sm">See all <i class="fa fa-external-link"></i></a>
+		</div>
+		</div> {{-- end of column 8--}}
+		<div class="col-sm">
+			@include('includes.events')
+			@include('includes.upcoming')
+		</div>
+	</div>
+</div>
