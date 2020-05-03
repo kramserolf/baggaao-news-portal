@@ -121,7 +121,7 @@ header .navbar li a {
 @media only screen and (max-width: 568px){
 	/*section navbar*/
 	header {
-		background-size: contain; 
+		background-size: cover; 
 		background-position: center; 
 		height: 70vh; 
 		background-attachment: fixed;
