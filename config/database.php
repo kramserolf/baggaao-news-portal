@@ -45,11 +45,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'db4free.net'),
+            'host' => env('DB_HOST', 'us-cdbr-east-06.cleardb.net'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'baggaoportal'),
-            'username' => env('DB_USERNAME', 'kserolf27'),
-            'password' => env('DB_PASSWORD', 'kramSerolf_27'),
+            'database' => env('DB_DATABASE', 'heroku_ac4d86803577750'),
+            'username' => env('DB_USERNAME', 'bdb832b3dc2488'),
+            'password' => env('DB_PASSWORD', '62b4765e'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
