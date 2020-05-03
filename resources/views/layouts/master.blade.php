@@ -2,10 +2,10 @@
 <html>
 <head>
     @include('includes.head')
+    @include('includes.script')
 </head>
 <body>
     @include('includes.header')
-    	@include('includes.script')
         @yield('content')
     @include('includes.footer')
    <script type="text/javascript">
