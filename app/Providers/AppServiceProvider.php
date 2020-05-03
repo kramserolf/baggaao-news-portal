@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Providers;
-use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 
@@ -24,9 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (env('APP_ENV') !== 'local') {
-            $url->forceSchema('https');
-        }
         Schema::defaultStringLength(191);
     }
 }
