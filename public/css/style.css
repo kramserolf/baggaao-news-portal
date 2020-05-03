@@ -125,6 +125,7 @@ header .navbar li a {
 		background-position: center; 
 		height: 70vh; 
 		background-attachment: fixed;
+		background-repeat: no-repeat;
 	}
 	header #lgu-logo{
 		max-width: 50px;
