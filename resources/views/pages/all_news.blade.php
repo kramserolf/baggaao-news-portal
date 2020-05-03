@@ -23,7 +23,7 @@
 					<p class="news-content">
 						{{Str::limit($row->content, $limit = 100, $end = '...')}}
 					</p><br>
-					<a href="/baggao/{{$row->id}}" target="_blank" class="btn btn-primary btn-sm">Continue reading<i class="fa fa-arrow-right ml-1"></i></a>
+					<a href="/news/{{$row->id}}" target="_blank" class="btn btn-primary btn-sm">Continue reading<i class="fa fa-arrow-right ml-1"></i></a>
 				</div>
 				</div>
 				@endforeach

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
@@ -51,7 +51,7 @@ footer img{
 }
 /*header*/
 header {
-	background-size: 100% 100%; 
+	background-size: cover; 
 	background-position: center; 
 	height: 100vh; 
 	background-attachment: fixed;
@@ -121,6 +121,12 @@ header .navbar li a {
 /*media queries*/
 @media only screen and (max-width: 568px){
 	/*section navbar*/
+	header {
+		background-size: 100% 100%; 
+		background-position: center; 
+		height: 70vh; 
+		background-attachment: fixed;
+	}
 	header #lgu-logo{
 		max-width: 50px;
 		max-height: auto;
