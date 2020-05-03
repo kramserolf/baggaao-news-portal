@@ -74,14 +74,14 @@ header .navbar li a {
 	height: auto;
 }
 /*section news - section all reports*/
-#news img, #all-news img, #all-reports img{
+/*#news img, #all-news img, #all-reports img{
 	min-width: 240px;
 	min-height: 150px;
 	max-width: 240px;
 	max-height: 150px;
 	padding: 10px 0;
 }
-
+*/
 /*section reports*/
 #reports img{
 	min-width: 220px;
