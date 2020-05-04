@@ -16,9 +16,6 @@ use App\Event;
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
 // home view
 // Route::get('/baggao', 'NewsController@news');
 Route::get('/', 'NewsController@news')->name('page.home');

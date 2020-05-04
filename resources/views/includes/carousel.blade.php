@@ -8,19 +8,19 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="{{asset('img/covid4.jpg')}}" alt="First slide">
+      <img class="d-block w-100" src="{{secure_asset('img/covid4.jpg')}}" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{asset('img/covid.jpg')}}" alt="Second slide">
+      <img class="d-block w-100" src="{{secure_asset('img/covid.jpg')}}" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{asset('img/covid1.jpg')}}" alt="Third slide">
+      <img class="d-block w-100" src="{{secure_asset('img/covid1.jpg')}}" alt="Third slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{asset('img/covid2.jpg')}}" alt="Fourth slide">
+      <img class="d-block w-100" src="{{secure_asset('img/covid2.jpg')}}" alt="Fourth slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{asset('img/covid3.jpg')}}" alt="Fifth slide">
+      <img class="d-block w-100" src="{{secure_asset('img/covid3.jpg')}}" alt="Fifth slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

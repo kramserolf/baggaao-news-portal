@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-7">
-				<video class="video" src="{{asset('video/bag-video.mp4')}}" controls loop muted id="video"></video>
+				<video class="video" src="{{secure_asset('video/bag-video.mp4')}}" controls loop muted id="video"></video>
 			</div>
 			<div class="col-sm-5">
 				<p class="text-justify"><br>We are downhearted and hospitable people. We are meek but we fight when we know we deserve better. We love to sing, to dance, and to live life to the fullest.<br><br>
@@ -32,7 +32,7 @@
 				@foreach($news as $row)
 				<div class="row border-bottom pb-4 mb-4">
 				<div class="col-sm-5">
-					<img src="{{asset('img/news/')}}/{{$row->image}}">
+					<img src="{{secure_asset('img/news/')}}/{{$row->image}}">
 				</div>
 				<div class="col-sm-7">
 					<span class="news-title">

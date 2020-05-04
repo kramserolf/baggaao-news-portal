@@ -1,7 +1,7 @@
-<header id="home" data-background-image-set="{{asset('img/background.jpg')}}" class="lozad">
+<header id="home" data-background-image-set="{{secure_asset('img/background.jpg')}}" class="lozad">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-sm navbar-dark position-fixed fixed-top mb-4 nav-up" id="navbar-header">
-      <img src="{{asset('img/lgu-logo.png')}}" alt="LGU Baggao Logo" id="lgu-logo">
+      <img src="{{secure_asset('img/lgu-logo.png')}}" alt="LGU Baggao Logo" id="lgu-logo">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-align-justify mr-1 text-white" style="font-size: 25px;"></i>
       </button>

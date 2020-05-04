@@ -11,9 +11,9 @@
 <!-- font-awesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <!-- smartmenu bootstrap css add on -->
-<link rel="stylesheet" type="text/css" href="{{asset('css/jquery.smartmenus.bootstrap-4.css')}}">
+<link rel="stylesheet" type="text/css" href="{{secure_asset('css/jquery.smartmenus.bootstrap-4.css')}}">
 <!-- custom css -->
-<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{secure_asset('css/style.css')}}">
 <!-- favicon -->
 <!-- <link rel="shortcut icon" type="text/css" href="favicon.ico"> -->
 

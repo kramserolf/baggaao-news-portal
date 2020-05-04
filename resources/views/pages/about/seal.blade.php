@@ -14,7 +14,7 @@
 				</div>
 				<div class="card-body">
 					<div class="text-center">
-						<img data-src="{{asset('img/lgu-logo.png')}}" alt="Logo of Baggao" class="lozad">
+						<img data-src="{{secure_asset('img/lgu-logo.png')}}" alt="Logo of Baggao" class="lozad">
 					</div>
 				<div class="text-center mt-4">
 				<table class="table table-bordered">
