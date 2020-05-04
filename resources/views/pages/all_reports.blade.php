@@ -12,12 +12,12 @@
 				@foreach($reports as $row)
 				<div class="row border-bottom pb-4 mb-4">
 				<div class="col-sm-5">
-					<img src="{{asset('img/reports/')}}/{{$row->image}}" width="240" height="150">
+					<img data-src="{{asset('img/reports/')}}/{{$row->image}}" width="240" height="150" class="lozad">
 				</div>
 				<div class="col-sm-7">
 					<blockquote class="blockquote-footer">{{$row->created_at}}
 					</blockquote>
-					<p class="news-title">
+					<p class="news-content">
 						{{$row->title}}
 					</p>
 					<a href="{{$row->content}}" target="_blank" >View on<i class="fa fa-facebook-official ml-1"></i></a>

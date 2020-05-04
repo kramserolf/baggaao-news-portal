@@ -1,4 +1,4 @@
-<header id="home" data-background-image="{{asset('img/background.png')}}" class="lozad">
+<header id="home" data-background-image-set="{{asset('img/background.jpg')}}" class="lozad">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-sm navbar-dark position-fixed fixed-top mb-4 nav-up" id="navbar-header">
       <img src="{{asset('img/lgu-logo.png')}}" alt="LGU Baggao Logo" id="lgu-logo">
@@ -36,25 +36,25 @@
             <a class="nav-link text-white dropdown-toggle" href="#">About</a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="#">Mission / Vision</a>
+                <a class="dropdown-item" href="{{route('baggao.mission')}}">Mission / Vision</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">History</a>
+                <a class="dropdown-item" href="{{route('baggao.history')}}">History</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Land Area & Municipalities Boundaries</a>
+                <a class="dropdown-item" href="{{route('baggao.land')}}">Land Area & Municipalities Boundaries</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Climate</a>
+                <a class="dropdown-item" href="{{route('baggao.climate')}}">Climate</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Topography & Slope</a>
+                <a class="dropdown-item" href="{{route('baggao.topography')}}">Topography & Slope</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Seal Symbolism</a>
+                <a class="dropdown-item" href="{{route('baggao.seal')}}">Seal Symbolism</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Barangays</a>
+                <a class="dropdown-item" href="{{route('baggao.barangay')}}">Barangays</a>
               </li>
             </ul>
           </li>
@@ -67,7 +67,3 @@
       </div>
   </nav>
 </header>
-<script type="text/javascript">
-  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-  observer.observe();
-</script>

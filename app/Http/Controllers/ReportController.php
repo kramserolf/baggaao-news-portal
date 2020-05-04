@@ -15,6 +15,5 @@ class ReportController extends Controller
     				->get();
     		return view('pages/all_reports')->withReports( $reports)
     			->withEvents($events);
-    	
     }
 }

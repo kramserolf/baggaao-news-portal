@@ -18,12 +18,14 @@
 			<p class="news-content pt-3 pb-3">
 				{{$news->content}}
 			</p>
+			<div class="fb-like" data-href="https://www.facebook.com/pg/baggaoinformationoffice" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+			<div class="fb-comments" data-href="https://www.facebook.com/pg/baggaoinformationoffice" data-numposts="5" data-width="" data-mobile></div>
 		</div> {{-- end of column 8--}}
 		<div class="col-sm">
 			@include('includes.events')
 			@include('includes.upcoming')
 		</div>
-	</div>		
+	</div>
 </div>
 </section>
 <script type="text/javascript">

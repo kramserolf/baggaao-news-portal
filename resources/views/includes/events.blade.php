@@ -6,7 +6,7 @@
 </nav>
 @foreach($events as $event)
 	<div class="pb-3 mb-3 border-bottom">
-		<span class="news-title">
+		<span class="news-title font-weight-bold">
 			{{$event->title}}
 		</span>
 		<blockquote class="blockquote-footer">{{$event->created_at}}
