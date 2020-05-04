@@ -126,7 +126,7 @@ header .navbar li a {
 	/*section navbar*/
 	header {
 		background-size: contain; 
-		background-position: top; 
+		background-position: bottom; 
 		height: 55vh; 
 		background-attachment: fixed;
 		background-repeat: no-repeat;
