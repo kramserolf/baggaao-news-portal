@@ -14,7 +14,7 @@
 			</span>
 			<blockquote class="blockquote-footer">{{$news->created_at}}
 			</blockquote>
-			<img src="{{secure_asset('public/img/news/')}}/{{$news->image}}">
+			<img src="{{secure_asset('img/news/')}}/{{$news->image}}">
 			<p class="news-content pt-3 pb-3">
 				{{$news->content}}
 			</p>

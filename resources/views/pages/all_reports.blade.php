@@ -12,7 +12,7 @@
 				@foreach($reports as $row)
 				<div class="row border-bottom pb-4 mb-4">
 				<div class="col-sm-5">
-					<img data-src="{{secure_asset('public/img/reports/')}}/{{$row->image}}" width="240" height="150" class="lozad">
+					<img data-src="{{secure_asset('img/reports/')}}/{{$row->image}}" width="240" height="150" class="lozad">
 				</div>
 				<div class="col-sm-7">
 					<blockquote class="blockquote-footer">{{$row->created_at}}
