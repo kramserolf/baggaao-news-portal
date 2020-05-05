@@ -60,7 +60,7 @@ class HomepageController extends Controller
     	 return view('/pages/about/mission')->with('announcements', $announcements);
     }
     public function viewHistory(){
-    	$announcements = Announcements::orderBy('created_at', 'desc')
+    	$announcements = Announcement::orderBy('created_at', 'desc')
     	        ->limit(3)
     	        ->get();
     	 return view('/pages/about/history')->with('announcements', $announcements);
