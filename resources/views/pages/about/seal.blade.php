@@ -94,7 +94,7 @@
 				</div>
 			</div>
 			<div class="col-sm">
-				@include('includes.events')
+				@include('includes.announcement')
 				@include('includes.upcoming')
 			</div>
 		</div>

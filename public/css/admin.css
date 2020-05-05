@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+	font-size: 1em;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.6em;
+	word-spacing: 0.2em;
+	letter-spacing: 0.1em;
+}
+
+section a:link {
+	text-decoration: none;
+	color: black;
+}
+#sidebar-wrapper {
+ position: fixed;
+ z-index: 1030;
+ height: 100vh;
+  -webkit-transition: margin .10s ease-out;
+  -moz-transition: margin .10s ease-out;
+  -o-transition: margin .10s ease-out;
+  transition: margin .10s ease-out;
+  transition-delay: .10s;
+}
+#page-content-wrapper {
+  margin-left: 225px;
+  width: 100%;
+ /* -webkit-transition: margin .20s ease-out;
+  -moz-transition: margin .20s ease-out;
+  -o-transition: margin .20s ease-out;*/
+  transition: margin .10s ease-out;
+  transition-delay: .10s;
+}
+#sidebar-wrapper .list-group {
+  width: 225px;
+  /*padding-top: 10px;*/
+}

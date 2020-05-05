@@ -12,7 +12,7 @@
 				@foreach($news as $row)
 				<div class="row border-bottom pb-4 mb-4">
 				<div class="col-sm-5">
-					<img data-src="{{secure_asset('img/news/')}}/{{$row->image}}" width="240" height="150" class="lozad">
+					<img data-src="{{secure_asset('storage/images/news/')}}/{{$row->image}}" width="240" height="150" class="lozad">
 				</div>
 				<div class="col-sm-7">
 					<span class="news-title">
@@ -34,7 +34,7 @@
 			</div>
 			</div> {{-- end of column 8--}}
 			<div class="col-sm">
-				@include('includes.events')
+				@include('includes.announcement')
 				@include('includes.upcoming')
 			</div>
 		</div>

@@ -3,7 +3,7 @@
 //     URL::forceScheme('https');
 // }
 use Illuminate\Support\Facades\Route;
-use App\Event;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,75 +18,59 @@ use App\Event;
 
 // home view
 // Route::get('/baggao', 'NewsController@news');
-Route::get('/', 'NewsController@news')->name('page.home');
+Route::get('/', 'HomepageController@home')->name('page.home');
+
 // see all news page
-Route::get('/news/all', 'NewsController@allNews')->name('all.news');
+Route::get('/news/all', 'HomepageController@allnews')->name('all.news');
 // get current news
-Route::get('/news/{news}', 'NewsController@view')->name('view.news');
+Route::get('/news/{news}', 'HomepageController@viewNews')
+    ->name('view.news');
 
 /*see all reports*/
-Route::get('/reports/all', 'ReportController@allReports')
-	->name('all.report');
+Route::get('/reports/all', 'HomepageController@allReports')->name('all.reports');
 
 // view mission and vission
-Route::get('/baggao/mission&vision', function () {
-    $events = Event::orderBy('created_at', 'desc')
-            ->limit(3)
-            ->get();
-     return view('/pages/about/mission')->with('events', $events);
-})->name('baggao.mission');
+Route::get('/about/mission&vision', 'HomepageController@viewMission')->name('about.mission');
 
 // view history
-Route::get('/baggao/history', function () {
-    $events = Event::orderBy('created_at', 'desc')
-            ->limit(3)
-            ->get();
-     return view('/pages/about/history')->with('events', $events);
-})->name('baggao.history');
+Route::get('/about/history', 'HomepageController@viewHistory')->name('about.history');
 
 // view land
-Route::get('/baggao/land', function () {
-    $events = Event::orderBy('created_at', 'desc')
-            ->limit(3)
-            ->get();
-     return view('/pages/about/land')->with('events', $events);
-})->name('baggao.land');
+Route::get('/about/land', 'HomepageController@viewLand')->name('about.land');
 
 // view climate
-Route::get('/baggao/climate', function () {
-    $events = Event::orderBy('created_at', 'desc')
-            ->limit(3)
-            ->get();
-     return view('/pages/about/climate')->with('events', $events);
-})->name('baggao.climate');
+Route::get('/about/climate', 'HomepageController@viewClimate')->name('about.climate');
 
 // view topography
-Route::get('/baggao/topography', function () {
-    $events = Event::orderBy('created_at', 'desc')
-            ->limit(3)
-            ->get();
-     return view('/pages/about/topography')->with('events', $events);
-})->name('baggao.topography');
+Route::get('/about/topography', 'HomepageController@viewTopography')->name('about.topography');
 
 // view seal
-Route::get('/baggao/seal', function () {
-    $events = Event::orderBy('created_at', 'desc')
-            ->limit(3)
-            ->get();
-     return view('/pages/about/seal')->with('events', $events);
-})->name('baggao.seal');
+Route::get('/about/seal', 'HomepageController@viewSeal')->name('about.seal');
 
-// view seal
-Route::get('/baggao/barangay', function () {
-    $events = Event::orderBy('created_at', 'desc')
-            ->limit(3)
-            ->get();
-     return view('/pages/about/barangay')->with('events', $events);
-})->name('baggao.barangay');
+// view brgy
+Route::get('/about/barangay', 'HomepageController@viewBrgy')->name('about.barangay');
 
 
+// admin routes
+Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
+// admin reports
+Route::resource('admin/reports', 'Admin\ReportController' );
+// admin news
+Route::resource('admin/news', 'Admin\NewsController' );
+// admin announcements
+Route::resource('admin/announcements', 'Admin\AnnouncementController' );
+// admin events
+Route::resource('admin/events', 'Admin\EventController' );
 
-
+// reports delete
+Route::get('/admin/reports/{report}', 'Admin\ReportController@destroy');
+// announcement delete
+Route::get('/admin/announcements/{announcement}', 'Admin\AnnouncementController@destroy');
+// news delete
+Route::get('/admin/news/{news}', 'Admin\NewsController@destroy');
+// events delete
+Route::get('/admin/events/{event}', 'Admin\EventController@destroy');
 
 

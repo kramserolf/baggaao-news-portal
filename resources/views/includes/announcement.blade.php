@@ -4,15 +4,15 @@
 	  <li class="breadcrumb-item active" aria-current="page">Latest</li>
 	</ol>
 </nav>
-@foreach($events as $event)
+@foreach($announcements as $row)
 	<div class="pb-3 mb-3 border-bottom">
 		<span class="news-title font-weight-bold">
-			{{$event->title}}
+			{{$row->title}}
 		</span>
-		<blockquote class="blockquote-footer">{{$event->created_at}}
+		<blockquote class="blockquote-footer">{{$row->created_at}}
 		</blockquote>
 		<p class="news-content">
-			{{$event->content}}
+			{{$row->content}}
 		</p>
 	</div>
 @endforeach

@@ -1,4 +1,4 @@
-<header id="home" data-background-image-set="{{secure_asset('img/background.jpg')}}" class="lozad">
+<header id="home" style="background-image: url({{secure_asset('img/background.jpg')}})">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-sm navbar-dark position-fixed fixed-top mb-4 nav-up" id="navbar-header">
       <img src="{{secure_asset('img/lgu-logo.png')}}" alt="LGU Baggao Logo" id="lgu-logo">
@@ -36,25 +36,25 @@
             <a class="nav-link text-white dropdown-toggle" href="#">About</a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="{{route('baggao.mission')}}">Mission / Vision</a>
+                <a class="dropdown-item" href="{{route('about.mission')}}">Mission / Vision</a>
               </li>
               <li>
-                <a class="dropdown-item" href="{{route('baggao.history')}}">History</a>
+                <a class="dropdown-item" href="{{route('about.history')}}">History</a>
               </li>
               <li>
-                <a class="dropdown-item" href="{{route('baggao.land')}}">Land Area & Municipalities Boundaries</a>
+                <a class="dropdown-item" href="{{route('about.land')}}">Land Area & Municipalities Boundaries</a>
               </li>
               <li>
-                <a class="dropdown-item" href="{{route('baggao.climate')}}">Climate</a>
+                <a class="dropdown-item" href="{{route('about.climate')}}">Climate</a>
               </li>
               <li>
-                <a class="dropdown-item" href="{{route('baggao.topography')}}">Topography & Slope</a>
+                <a class="dropdown-item" href="{{route('about.topography')}}">Topography & Slope</a>
               </li>
               <li>
-                <a class="dropdown-item" href="{{route('baggao.seal')}}">Seal Symbolism</a>
+                <a class="dropdown-item" href="{{route('about.seal')}}">Seal Symbolism</a>
               </li>
               <li>
-                <a class="dropdown-item" href="{{route('baggao.barangay')}}">Barangays</a>
+                <a class="dropdown-item" href="{{route('about.barangay')}}">Barangays</a>
               </li>
             </ul>
           </li>

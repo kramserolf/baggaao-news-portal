@@ -12,7 +12,7 @@
     {{-- hide show navbar --}}
    $(document).scroll(function() {
      var y = $(this).scrollTop();
-     if (y > 70) {
+     if (y > 220) {
        $('.navbar').fadeOut();
      } else {
        $('.navbar').fadeIn();

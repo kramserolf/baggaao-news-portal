@@ -4,7 +4,7 @@
 <section id="highlights" class="bg-light">
 	<div class="container">
 		<div class="text-center">
-			<h4 class="text-uppercase">highlights</h4>
+			<h4 class="text-uppercase">featured</h4>
 			<hr class="small">
 		</div>
 		@include('includes.carousel')
@@ -51,7 +51,8 @@
 				
 			</div>
 			<div class="col-sm-4 border-left">
-				<p class="badge badge-info">Follow us on <i class="fa fa-facebook-official"></i></p>
+				<p class="badge badge-info">Follow us on <i class="fa fa-facebook-official"></i>
+				</p>
 				<div class="fb-page" data-href="https://www.facebook.com/pg/baggaoinformationoffice" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/pg/baggaoinformationoffice" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pg/baggaoinformationoffice">Baggao Information Office</a></blockquote></div>
 			</div>
 		</div>
