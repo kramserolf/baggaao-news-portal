@@ -14,8 +14,7 @@
 						History of baggao
 					</div>
 					<div class="card-body text-justify">
-						
-<p>Long before the issuance of the Royal Decree which officially detached BAGGAO as a barrio of Amulung on November 27, 1896, the place has already became famous as a hunting ground.</p>
+					<p>Long before the issuance of the Royal Decree which officially detached BAGGAO as a barrio of Amulung on November 27, 1896, the place has already became famous as a hunting ground.</p>
                     <p>Old folks recount that the IBANAGS who frequently hunted in the locale, used to wash their catch in a big mud hole before taking them home which they called “ABBAGAOAN”. This “abbaggaoan” an Ibanag word, meaning a place to wash, became a noted landmark for hunters from which the name of the municipality was eventually derived.</p>
                     <p>With the formal creation of Baggao as a separate municipality, Rev. Fr. Pedro Vicandi, O.P. who was then the Parish Priest of the area, was designated officer-in-charge of the town. His chapel, and at the same time, the town hall consisted of a shack made of bamboo and cogon built atop a hill one kilometer southeast of the old municipal building. However, the old municipal building was razed by fire by lawless elements in 1985. On April 18, 1899, Fr. Vicandi fled the area when Col. Daniel Tirong, under Gen. Emilio E. Aguinaldo visited the town and put to flame the friar's shanty. However in September 1899, when civil order was finally restored, Don Rafael Catolico took over as the first mayor of the New “Pueblo Civil”.</p>
                     <p> For more than 85 years since it was separated from its mother town of Amulung, the seat of the Municipal Government of Baggao has been at Centro or Poblacion. In 1899, when Don Rafael Catolico took over as the first mayor of the new “Pueblo Civil” there were 5,051 inhabitants living in sparce settlements. The communities given the official status as a barrio were those immediately surrounding the Poblacion. Most of the barangays, now established upstream were merely patches of forest clearings barely making the requirements of becoming a full-fledge barrio.</p>
@@ -24,11 +23,10 @@
                     <p>In so doing, the Municipal Development Council arrived at a general consensus of selecting SAN JOSE, the most progressive barangay of the town, as the next seat of the municipal government of Baggao.
                         </p>
                     <p>Hence in 1985, public hearings led by the late Mayor Virgilio G. Herrero were conducted throughout the different barangays of Baggao where 85 percent of the population expressed their support to the move. So, in a session conducted by the Sangguniang Bayan of Baggao, the members passed a resolution transferring the site of the seat of municipal government of Baggao from the old Poblacion to barangay San Jose.</p>
-                </div>
-					</div>
+                	</div>
 				</div>
 			</div>
-			<div class="col-sm">
+			<div class="col-sm-4">
 				@include('includes.announcement')
 				@include('includes.upcoming')
 			</div>

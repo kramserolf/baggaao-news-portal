@@ -38,7 +38,7 @@
     <!-- alertify js -->
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     {{-- custom css --}}
-    <link rel="stylesheet" type="text/css" href="{{secure_asset('css/admin.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/admin.css')}}">
 </head>
 <body>
     <div id="app">
