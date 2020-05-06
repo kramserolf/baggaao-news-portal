@@ -72,5 +72,3 @@ Route::get('/admin/announcements/{announcement}', 'Admin\AnnouncementController@
 Route::get('/admin/news/{news}', 'Admin\NewsController@destroy');
 // events delete
 Route::get('/admin/events/{event}', 'Admin\EventController@destroy');
-
-
