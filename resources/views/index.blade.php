@@ -71,4 +71,5 @@
 		</div>
 	</div>
 </section>
+<div id="fb-root"></div>
   @endsection
