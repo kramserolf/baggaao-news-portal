@@ -1,6 +1,3 @@
-@extends('layouts.master')
-@section('content')
-
 <section id="all-news">
 	<div class="text-center">
 		<h4 class="text-uppercase">news</h4>
@@ -49,4 +46,3 @@
 	    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 	}
 </script>
-@endsection

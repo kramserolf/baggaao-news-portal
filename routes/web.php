@@ -21,9 +21,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomepageController@home')->name('page.home');
 
 // Widget All News
-Route::widget('/news/all', 'AllNewsWidget', 'all.news');
+Route::get('/news/all', function(){
+	return view('pages.all_news');
+})->name('all.news');
 // Widget All Reports
-Route::widget('/reports/all', 'AllReportsWidget', 'all.reports');
+Route::get('/news/reports', function(){
+	return view('pages.all_reports');
+})->name('all.reports');
 // view selected news
 Route::get('/news/{news}', 'HomepageController@viewNews')
     ->name('view.news');
