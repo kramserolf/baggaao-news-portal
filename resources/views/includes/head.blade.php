@@ -1,5 +1,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:url"           content="https://baggaonewsportal.herokuapp.com/news/{{$data->id}}" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="{{$data->title}}" />
+  <meta property="og:description"   content="{{$data->content}}" />
+  <meta property="og:image"         content="https://baggaonewsportal.herokuapp.com/img/news/{{$data->image}}" />
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <!-- bootstrap css -->
