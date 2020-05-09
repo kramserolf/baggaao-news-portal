@@ -3,7 +3,7 @@
 	<i class="fa fa-angle-double-up" style="font-size: 50px; display: none;"id="go-up"></i>
 </div>
 <footer class="p-3 mt-4 text-center bg-dark text-white">
-	<img class="float-left" src="{{asset('img/ict-logo.png')}}" alt="ict logo">
+	<img class="float-left" src="{{secure_asset('img/ict-logo.png')}}" alt="ict logo">
 	<p>
 		Copyright © All Rights Reserved | Municipality of Baggao Cagayan Information and News Portal | ICT Office 2020
 	</p>		
