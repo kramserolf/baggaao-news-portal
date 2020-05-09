@@ -1,5 +1,9 @@
 @extends('layouts.master')
-
+<meta property="og:url"           content="https://baggaonewsportal.herokuapp.com" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Baggao News Information and News Portal" />
+  <meta property="og:description"   content="Land and Boundaries" />
+  <meta property="og:image"         content="https://baggaonewsportal.herokuapp.com/img/lgu-logo.png" />
 @section('content')
 <section id="land">
 	<div class="text-center">
@@ -19,10 +23,11 @@
 						<p>It may usefully be noted that in response to the need to seek authorities ruling on the issue of political boundaries, the MPDC office made representations with DENR during the updating of this Comprehensive Land Use Plan. In September 2004, the CENRO-DENR personnel based in Alcala, Cagayan assisted the MPDO staff in the preparation of a new base map of Baggao reflecting the actual municipal boundaries of Gattaran and Peñablanca. While the plotted municipal boundary is “not official”, the planning team was forced to adopt this new base map for planning purposes pending resolution of this case. It should be noted that while the actual measurement of municipal land area and boundaries is a technical task, boundary disputes is essentially a political and legal matter. The Local Government Code of 1991 recognizes this thorny issue and proposed ways of settling such controversy. Resolution of this boundary dispute however is deemed critical.</p>
 					</div>
 				</div>
+				<div class="fb-share-button" data-href="https://baggaonewsportal.herokuapp.com/about/land" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbaggaonewsportal.herokuapp.com%2Fabout%2Fland&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 			</div>
 			<div class="col-sm">
-				@include('includes.announcement')
-				@include('includes.upcoming')
+				@widget('AnnouncementWidget')
+				@widget('EventsWidget')
 			</div>
 		</div>
 	</div>	

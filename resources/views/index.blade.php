@@ -24,7 +24,8 @@
 		<h4 class="text-uppercase">news  -  events</h4>
 		<hr class="small">
 	</div>
-	@include('pages.home')
+	@widget('NewsWidget')
+	{{-- @include('pages.home') --}}
 </section>
 {{-- reports --}}
 <section id="reports" class="bg-white">
@@ -32,7 +33,8 @@
 		<h4 class="text-uppercase">Reports</h4>
 		<hr class="small">
 	</div>
-	@include('pages.reports')
+	@widget('ReportsWidget')
+	{{-- @include('pages.reports') --}}
 </section>
 {{-- summary --}}
 <section id="summary" class="bg-light">

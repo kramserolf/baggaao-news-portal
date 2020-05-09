@@ -1,48 +1,50 @@
 @extends('layouts.master')
 @section('content')
 
-<section id="all-reports">
+<section id="all-news">
 	<div class="text-center">
-		<h4 class="text-uppercase">reports</h4>
+		<h4 class="text-uppercase">news</h4>
 		<hr class="small">
 	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8">
-				@foreach($reports as $row)
+				@foreach($data as $row)
 				<div class="row border-bottom pb-4 mb-4">
 				<div class="col-sm-5">
-					<img data-src="{{asset('img/reports/')}}/{{$row->image}}" width="240" height="150" class="lozad">
+					<img data-src="{{secure_asset('img/news/')}}/{{$row->image}}" width="240" height="150" class="lozad">
 				</div>
 				<div class="col-sm-7">
+					<span class="news-title">
+						{{$row->title}}
+					</span>
 					<blockquote class="blockquote-footer">{{$row->created_at}}
 					</blockquote>
 					<p class="news-content">
-						{{$row->title}}
+						{{Str::limit($row->content, $limit = 100, $end = '...')}}
 					</p>
-					<a href="{{$row->content}}" target="_blank" >View on<i class="fa fa-facebook-official ml-1"></i></a>
+					<a href="/news/{{$row->id}}" target="_blank" class="btn btn-primary btn-sm">Continue reading<i class="fa fa-arrow-right ml-1"></i></a>
 				</div>
 				</div>
 				@endforeach
-			<div class="row justify-content-end">
+			<div class="row justify-content-center">
 				<ul class="pagination pagination-sm">
-					{{$reports->links()}}
+					{{$data->links()}}
 				</ul>
 			</div>
 			</div> {{-- end of column 8--}}
 			<div class="col-sm">
-				@include('includes.announcement')
-				@include('includes.upcoming')
+			@widget('AnnouncementWidget')
 			</div>
 		</div>
 	</div>
 </section>
 <script type="text/javascript">
 	$(document).ready(function(){
-		scrollToDown('#all-reports');
+		scrollToDown('#all-news');
 	});
 	function scrollToDown(aid){
-	    var aTag = $("#all-reports");
+	    var aTag = $("#all-news");
 	    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 	}
 </script>

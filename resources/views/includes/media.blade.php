@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-7">
-			<video controls poster="{{asset('video/video-poster.jpg')}}" preload="none" class="video lozad" data-src="{{asset('video/bag-video.mp4')}}" type="video/mp4"id="video" ></video>
+			<video controls poster="{{secure_asset('video/video-poster.jpg')}}" preload="none" class="video lozad" data-src="{{secure_asset('video/bag-video.mp4')}}" type="video/mp4"id="video" ></video>
 		</div>
 		<div class="col-sm-5">
 			<p class="text-justify">We are Baggaoeños!<br>We are downhearted and hospitable people. We are meek but we fight when we know we deserve better. We love to sing, to dance, and to live life to the fullest.<br><br>

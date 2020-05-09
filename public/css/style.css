@@ -11,6 +11,7 @@ body {
 	word-spacing: 0.2em;
 	letter-spacing: 0.1em;
 }
+.btn-primary{background-color:#1d809f!important;border-color:#1d809f!important;color:#fff!important}.btn-primary:active,.btn-primary:focus,.btn-primary:hover{background-color:#155d74!important;border-color:#155d74!important}
 a:link {
 	text-decoration: none;
 }
@@ -56,6 +57,7 @@ section .news-content, section .card-body p{
 }
 /*header*/
 header {
+	min-height: 500px;
 	background-position: center center; 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -139,6 +141,16 @@ header .navbar li a {
 	max-width: 100%;
 	max-height: 100%;
 }
+/*section brgy*/
+#brgy .brgy a{
+	text-transform: uppercase;
+	color: #8e0e00;
+	font-weight: bold;
+}
+
+#brgy .brgy span{
+	font-size: 0.85em;
+}
 
 /*media queries*/
 @media only screen and (max-width: 768px){
@@ -149,7 +161,10 @@ header .navbar li a {
 	header .navbar li a {
 	font-size: 0.9em;
 	}
-
+	header .navbar .dropdown-menu {
+		max-height: 200px;
+		overflow: scroll;
+	}
 	/*section news*/
 	/*section news - section all reports*/
 	#news img, #all-news img, #all-reports img, #reports img{
@@ -168,6 +183,28 @@ header .navbar li a {
 		max-height: auto;
 		min-width: 100%;
 		min-height: auto;
+	}
+	/*brgy*/
+	#brgy .brgy{
+		text-align: center;
+	}
+	
+	/*contact us*/
+	/*#contact p {
+		text-align: center;
+	}*/
+	.fb-share-button {
+		margin-bottom: 15px;
+	}
+	.col-sm {
+		margin-top: 15px;
+	}
+	/*contacts*/
+	#contact .contacts{
+		text-align:center;
+	}
+	#contact span{
+		text-align:center;
 	}
 	/*footer*/
 	footer img{

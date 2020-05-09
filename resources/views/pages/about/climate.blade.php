@@ -1,5 +1,9 @@
 @extends('layouts.master')
-
+<meta property="og:url"           content="https://baggaonewsportal.herokuapp.com" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Baggao News Information and News Portal" />
+  <meta property="og:description"   content="Climate" />
+  <meta property="og:image"         content="https://baggaonewsportal.herokuapp.com/img/lgu-logo.png" />
 @section('content')
 <section id="climate">
 	<div class="text-center">
@@ -22,10 +26,11 @@
 						<p>The month of December registered the highest percentage of mean relative to humidity while the lowest mean relative humidity occurred during the month of February as observed by the Aparri PAGASA station.</p>
 					</div>
 				</div>
+				<div class="fb-share-button" data-href="https://baggaonewsportal.herokuapp.com/about/climate" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbaggaonewsportal.herokuapp.com%2Fabout%2Fclimate&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 			</div>
 			<div class="col-sm">
-				@include('includes.announcement')
-				@include('includes.upcoming')
+				@widget('AnnouncementWidget')
+				@widget('EventsWidget')
 			</div>
 		</div>
 	</div>	

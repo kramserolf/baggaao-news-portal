@@ -1,5 +1,9 @@
 @extends('layouts.master')
-
+<meta property="og:url"           content="https://baggaonewsportal.herokuapp.com" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Baggao News Information and News Portal" />
+  <meta property="og:description"   content="History of Baggao" />
+  <meta property="og:image"         content="https://baggaonewsportal.herokuapp.com/img/lgu-logo.png" />
 @section('content')
 <section id="history">
 	<div class="text-center">
@@ -25,10 +29,11 @@
                     <p>Hence in 1985, public hearings led by the late Mayor Virgilio G. Herrero were conducted throughout the different barangays of Baggao where 85 percent of the population expressed their support to the move. So, in a session conducted by the Sangguniang Bayan of Baggao, the members passed a resolution transferring the site of the seat of municipal government of Baggao from the old Poblacion to barangay San Jose.</p>
                 	</div>
 				</div>
+				<div class="fb-share-button" data-href="https://baggaonewsportal.herokuapp.com/about/history" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbaggaonewsportal.herokuapp.com%2Fabout%2Fhistory&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>	
 			</div>
 			<div class="col-sm-4">
-				@include('includes.announcement')
-				@include('includes.upcoming')
+				@widget('AnnouncementWidget')
+				@widget('EventsWidget')
 			</div>
 		</div>
 	</div>	

@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\DB;
 use App\Announcement;
 use App\News;
 use App\Report;
+use Mailgun\Mailgun;
+use RealRashid\SweetAlert\Facades\Alert;
+use Validator;
 
 class HomepageController extends Controller
 {
@@ -24,26 +27,6 @@ class HomepageController extends Controller
     	    ->limit(3)
     	    ->get();
     	return view('index', ['news' => $news, 'reports' => $reports, 'announcements' => $announcements]);
-    }
-    public function allNews(){
-    	$news = DB::table('news')
-    	    ->latest()
-    	    ->simplePaginate(10);
-    	$announcements = DB::table('announcements')
-    	    ->latest()
-    	    ->limit(3)
-    	    ->get();
-    	return view('pages.all_news', ['news'=> $news, 'announcements'=> $announcements]);
-    }
-    public function allReports() {
-    	$reports = DB::table('reports')
-    	    ->latest()
-    	    ->simplePaginate(10);
-    	$announcements = DB::table('announcements')
-    	    ->latest()
-    	    ->limit(3)
-    	    ->get();
-    	return view('pages.all_reports', ['reports'=> $reports, 'announcements' => $announcements]);
     }
     public function viewNews($id){
     	$news = DB::table('news')->find($id);
@@ -94,5 +77,37 @@ class HomepageController extends Controller
     	        ->limit(3)
     	        ->get();
     	 return view('/pages/about/barangay')->with('announcements', $announcements);
+    }
+    public function viewContact(){
+        $announcements = Announcement::orderBy('created_at', 'desc')
+                ->limit(3)
+                ->get();
+         return view('/includes/contact')->with('announcements', $announcements);
+    }
+    public function sendMessage(Request $request){
+        // First, instantiate the SDK with your API credentials
+        $mg = Mailgun::create('2dbb22684e947ca70b2954bda3b0d451-0afbfc6c-6218b30f'); // For US servers
+
+        // Now, compose and send your message.
+        // $mg->messages()->send($domain, $params);
+        $validator = Validator::make($request->all(), [
+                'email'=>'required|email',
+                'subject' => 'required',
+                'message' => 'required'
+            ]);
+        if ($validator->fails()) {
+            Alert::error('Invalid email', 'Please enter a valid email');
+            return redirect()->back()->withInput();
+        } else {
+           $mg->messages()->send('sandbox59e39447d8b24ed789376412a8ce9f69.mailgun.org', [
+                'from'    => $request->email,
+                'to'      => 'serolfkram27@gmail.com',
+                'subject' => $request->subject,
+                'text'    => $request->message
+           ]); 
+           Alert::success('Success', 'Your message sent successfully');
+           return redirect()->route('contact'); 
+        }
+          
     }
 }

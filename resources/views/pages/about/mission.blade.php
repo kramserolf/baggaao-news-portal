@@ -1,5 +1,9 @@
 @extends('layouts.master')
-
+<meta property="og:url"           content="https://baggaonewsportal.herokuapp.com" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Baggao News Information and News Portal" />
+  <meta property="og:description"   content="Mission & Vision" />
+  <meta property="og:image"         content="https://baggaonewsportal.herokuapp.com/img/lgu-logo.png" />
 @section('content')
 	<section id="mission">
 	<div class="text-center">
@@ -26,10 +30,11 @@
 				    <p class="card-text">Baggao an agro-industry-based, progressive and globally competitive municipality “known as Tourist Haven of the North” driven by empowered, God-loving people living harmoniously with nature governed by service oriented leaders.</p>
 				  </div>
 				</div>
+				<div class="fb-share-button" data-href="https://baggaonewsportal.herokuapp.com/about/mission&amp;vision" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbaggaonewsportal.herokuapp.com%2Fabout%2Fmission%26vision&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 			</div>
 			<div class="col-sm">
-				@include('includes.announcement')
-				@include('includes.upcoming')
+				@widget('AnnouncementWidget')
+				@widget('EventsWidget')
 			</div>
 		</div>
 	</div>

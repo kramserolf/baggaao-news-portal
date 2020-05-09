@@ -20,14 +20,14 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/baggao', 'NewsController@news');
 Route::get('/', 'HomepageController@home')->name('page.home');
 
-// see all news page
-Route::get('/news/all', 'HomepageController@allnews')->name('all.news');
-// get current news
+// Widget All News
+Route::widget('/news/all', 'AllNewsWidget', 'all.news');
+// Widget All Reports
+Route::widget('/reports/all', 'AllReportsWidget', 'all.reports');
+// view selected news
 Route::get('/news/{news}', 'HomepageController@viewNews')
     ->name('view.news');
 
-/*see all reports*/
-Route::get('/reports/all', 'HomepageController@allReports')->name('all.reports');
 
 // view mission and vission
 Route::get('/about/mission&vision', 'HomepageController@viewMission')->name('about.mission');
@@ -50,6 +50,11 @@ Route::get('/about/seal', 'HomepageController@viewSeal')->name('about.seal');
 // view brgy
 Route::get('/about/barangay', 'HomepageController@viewBrgy')->name('about.barangay');
 
+// view contact us
+Route::get('/contactus', 'HomepageController@viewContact')->name('contact');
+Route::post('/contactus', 'HomepageController@sendMessage')->name('send.message');
+
+
 
 // admin routes
 Auth::routes();
@@ -62,7 +67,7 @@ Route::resource('admin/news', 'Admin\NewsController' );
 // admin announcements
 Route::resource('admin/announcements', 'Admin\AnnouncementController' );
 // admin events
-Route::resource('admin/events', 'Admin\EventController' );
+Route::resource('admin/events', 'Admin\EventController');
 
 // reports delete
 Route::get('/admin/reports/{report}', 'Admin\ReportController@destroy');
@@ -72,3 +77,6 @@ Route::get('/admin/announcements/{announcement}', 'Admin\AnnouncementController@
 Route::get('/admin/news/{news}', 'Admin\NewsController@destroy');
 // events delete
 Route::get('/admin/events/{event}', 'Admin\EventController@destroy');
+
+
+
