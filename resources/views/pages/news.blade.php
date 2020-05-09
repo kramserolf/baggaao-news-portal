@@ -5,7 +5,7 @@
 	 <meta property="og:type"          content="website" />
 	 <meta property="og:title"         content="{{$news->title}}" />
 	 <meta property="og:description"   content="{{$news->content}}" />
-	 <meta property="og:image"         content="https://baggaonewsportal.herokuapp.com/img/{{$news->image}}" />
+	 <meta property="og:image"         content="https://baggaonewsportal.herokuapp.com/img/news/{{$news->image}}" />
 	 <meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <!-- CSRF Token -->
