@@ -35,6 +35,7 @@
 			</div> {{-- end of column 8--}}
 			<div class="col-sm">
 			@widget('AnnouncementWidget')
+			@widget('EventsWidget')
 			</div>
 		</div>
 	</div>
