@@ -4,7 +4,6 @@
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="{{$news->title}}" />
   <meta property="og:description"   content="{{$news->content}}" />
-  <meta property="og:image"         content="https://baggaonewsportal.herokuapp.com/img/news/{{$news->image}}" />
 <section id="view-news">
 <div class="container">
 	<nav aria-label="breadcrumb">
@@ -23,7 +22,7 @@
 			<p class="news-content pt-3 pb-3">
 				{{$news->content}}
 			</p>
-			<div class="fb-share-button" data-href="https://baggaonewsportal.herokuapp.com/news/{{$news->id}}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbaggaonewsportal.herokuapp.com%2Fnews%2F{{$news->id}}%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+			<div class="fb-share-button" data-href="https://baggaonewsportal.herokuapp.com/news/{{$news->id}}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbaggaonewsportal.herokuapp.com%2Fnews%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 		</div> {{-- end of column 8--}}
 		<div class="col-sm-4">
 			@widget('AnnouncementWidget')
