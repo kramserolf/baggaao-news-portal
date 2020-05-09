@@ -9,7 +9,7 @@
 				@foreach($data as $row)
 				<div class="row border-bottom pb-4 mb-4">
 				<div class="col-sm-5">
-					<img src="{{secure_asset('img/news/')}}/{{$row->image}}" width="240" height="150">
+					<img data-src="{{secure_asset('img/news/')}}/{{$row->image}}" width="240" height="150" class="lozad">
 				</div>
 				<div class="col-sm-7">
 					<span class="news-title">
