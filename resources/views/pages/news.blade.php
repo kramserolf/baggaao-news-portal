@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('content')
-<meta property="og:url"           content="https://baggaonewsportal.herokuapp.com" />
+<meta property="og:url"           content="https://baggaonewsportal.herokuapp.com/news/{{$news->id}}" />
   <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Baggao News Information and News Portal" />
-  <meta property="og:description"   content="{{$news->title}}" />
+  <meta property="og:title"         content="{{$news->title}}" />
+  <meta property="og:description"   content="{{$news->content}}" />
   <meta property="og:image"         content="https://baggaonewsportal.herokuapp.com/img/news/{{$news->image}}" />
 <section id="view-news">
 <div class="container">
