@@ -5,6 +5,7 @@
 	 <meta property="og:type"          content="website" />
 	 <meta property="og:title"         content="{{$news->title}}" />
 	 <meta property="og:description"   content="{{$news->content}}" />
+	 <meta property="og:image"         content="https://baggaonewsportal.herokuapp.com/img/{{$news->image}}" />
 	 <meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <!-- CSRF Token -->
@@ -18,7 +19,7 @@
 	 <!-- smartmenu bootstrap css add on -->
 	 <link rel="stylesheet" type="text/css" href="{{secure_asset('css/jquery.smartmenus.bootstrap-4.css')}}">
 	 <!-- custom css -->
-	 <link rel="stylesheet" type="text/css" href="{{secure_asset('css/style.css')}}">
+	 <link rel="stylesheet" type="text/css" href="{{secure_asset('css/style.css')}}">s
 
 </head>
 <body>
