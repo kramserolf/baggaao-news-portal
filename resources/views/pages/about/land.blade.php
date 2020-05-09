@@ -1,5 +1,5 @@
 @extends('layouts.master')
-<meta property="og:url"           content="https://baggaonewsportal.herokuapp.com" />
+<meta property="og:url"           content="https://baggaonewsportal.herokuapp.com/land" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="Baggao News Information and News Portal" />
   <meta property="og:description"   content="Land and Boundaries" />
