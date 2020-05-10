@@ -8,7 +8,7 @@
 	</div>
 	<div id="page-content-wrapper">
 		<div class="container">
-			@include('layouts.login_navbar.blade.php')
+			@include('layouts.login_navbar')
 			<div class="d-flex text-black">
 			  <div class="w-100">
 			    <h5>List of Administrator</h5>
