@@ -48,6 +48,7 @@
 	</div>
 	</section>
 	@include('includes.footer')
+	<script type="text/javascript" src="{{secure_asset('js/style.js')}}"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			scrollToDown('#topography');
