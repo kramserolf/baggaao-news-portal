@@ -374,8 +374,8 @@
 	</section>
 	@include('includes.footer')
 	<div id="fb-root"></div>
-	<script type="text/javascript" src="{{secure_asset('js/style.js')}}"></script>
 	@include('includes.script')
+	<script type="text/javascript" src="{{secure_asset('js/style.js')}}"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			scrollToDown('#brgy');
