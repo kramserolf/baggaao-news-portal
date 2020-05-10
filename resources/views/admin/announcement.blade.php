@@ -8,6 +8,7 @@
     </div>
     <div id="page-content-wrapper">
         <div class="container">
+          @include('layouts.login_navbar.blade.php')
             <div class="d-flex text-black pb-2">
               <div class="w-100">
                 <h5>List of Announcement</h5>

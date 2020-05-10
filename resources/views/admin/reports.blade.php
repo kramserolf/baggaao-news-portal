@@ -8,6 +8,7 @@
     </div>
     <div id="page-content-wrapper">
         <div class="container">
+          @include('layouts.login_navbar.blade.php')
             <div class="d-flex text-black pb-2">
               <div class="w-100">
                 <h5>List of Reports</h5>
@@ -93,7 +94,7 @@ $("#update_image").change(function() {
 // show modal
 $('#add_reports').click(function(){
   $('#reports_form')[0].reset(); 
-  $('#load_image').attr('src', '{{secure_asset('storage/images/default.jpg')}}');
+  $('#load_image').attr('src', '{{secure_asset('img/default.jpg')}}');
   $('#reportsModal').modal('show');
 });
 
