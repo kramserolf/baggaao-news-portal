@@ -18,6 +18,4 @@
 <link rel="stylesheet" type="text/css" href="{{secure_asset('css/style.css')}}">
 <link rel="icon" href="{{ secure_asset('img/favicon.ico') }}" type="image/x-icon"/>
 <!-- favicon -->
-<!-- <link rel="shortcut icon" type="text/css" href="favicon.ico"> -->
-
 <title>Municipality of Baggao Cagayan Information and News Portal</title>
