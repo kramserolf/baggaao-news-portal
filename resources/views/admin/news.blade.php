@@ -93,7 +93,7 @@ $("#update_image").change(function() {
 // show modal
 $('#add_news').click(function(){
   $('#news_form')[0].reset(); 
-  $('#load_image').attr('src', '{{asset('storage/images/default.jpg')}}');
+  $('#load_image').attr('src', '{{secure_asset('storage/images/default.jpg')}}');
   $('#newsModal').modal('show');
 });
 
@@ -113,7 +113,7 @@ $('#news_form').on('submit', function(event){
       if (data.success) {
         $('#news').DataTable().ajax.reload();
         $('#news_form')[0].reset();
-        $('#load_image').attr('src', '{{asset('storage/images/default.jpg')}}');
+        $('#load_image').attr('src', '{{secure_asset('storage/images/default.jpg')}}');
         alertify.set('notifier','position', 'top-right');
         alertify.success(data.success, 3); 
       }
@@ -155,7 +155,7 @@ $(document).on('click', '.edit', function(){
     success:function(data) {
       $('#updateNewsModal').modal('show');
       $('#hidden_id').val(id);
-      $('#update_load_image').attr('src', '{{asset('storage/images/news/')}}/'+data.result.image);
+      $('#update_load_image').attr('src', '{{secure_secure_asset('storage/images/news/')}}/'+data.result.image);
       $('#update_title').val(data.result.title);
       $('#update_content').val(data.result.content);
    }
