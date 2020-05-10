@@ -18,13 +18,15 @@
 					</span>
 					<blockquote class="blockquote-footer">{{$row->created_at}}
 					</blockquote>
-					<p class="news-content">
-						{{Str::limit($row->content, $limit = 100, $end = '...')}}
-					</p>
 					<a href="{{$row->content}}" target="_blank" class="btn btn-primary btn-sm">Continue reading<i class="fa fa-arrow-right ml-1"></i></a>
 				</div>
 				</div>
 				@endforeach
+			<div class="row justify-content-center">
+				<ul class="pagination pagination-sm">
+					{{$data->links()}}
+				</ul>
+			</div>
 			</div> {{-- end of column 8--}}
 			<div class="col-sm">
 				@widget('AnnouncementWidget')
