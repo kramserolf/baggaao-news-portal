@@ -25,7 +25,7 @@ class AllReportsWidget
     */
 	public function data()
 	{
-		return Report::orderBy('id', 'desc')
+		return Report::latest()
             ->simplePaginate(10);
 	}
 
@@ -37,6 +37,6 @@ class AllReportsWidget
     */
 	public function extraCacheKeyDependency($args)
 	{
-        return [/* request('page') */];
+        return [ request('page') ];
 	}
 }
