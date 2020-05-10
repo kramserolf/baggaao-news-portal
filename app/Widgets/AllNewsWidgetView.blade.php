@@ -1,9 +1,10 @@
 <section id="all-news">
-	<div class="text-center">
-		<h4 class="text-uppercase">news</h4>
-		<hr class="small">
-	</div>
 	<div class="container">
+		<nav aria-label="breadcrumb">
+		  <ol class="breadcrumb">
+		    <li class="breadcrumb-item active" aria-current="page">Latest News</li>
+		  </ol>
+		</nav>
 		<div class="row">
 			<div class="col-sm-8">
 				@foreach($data as $row)

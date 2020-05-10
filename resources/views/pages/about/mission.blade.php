@@ -1,10 +1,17 @@
-@extends('layouts.master')
-<meta property="og:url"           content="https://baggaonewsportal.herokuapp.com/mission&vision" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Baggao News Information and News Portal" />
-  <meta property="og:description"   content="Mission & Vision" />
-  <meta property="og:image"         content="https://baggaonewsportal.herokuapp.com/img/lgu-logo.png" />
-@section('content')
+<!DOCTYPE html>
+<html>
+<head>
+	<meta property="og:url" content="https://baggaonewsportal.herokuapp.com/about/mission&vision">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Mission and Vision of Baggao" >
+	<meta property="og:description" content="To uplift the general well-being of the people through the development of its agro-industrial and tourism potentials managed by an empowered and globally competitive community.">
+	<meta property="og:image" content="https://baggaonewsportal.herokuapp.com/img/lgu-logo.png" >
+	<meta property="og:image:width" content="300px">
+	<meta property="og:image:height" content="160px">
+	@include('includes.css')
+</head>
+<body>
+	@include('includes.header')
 	<section id="mission">
 	<div class="text-center">
 		<h4 class="text-uppercase">mission - vision</h4>
@@ -39,6 +46,9 @@
 		</div>
 	</div>
 	</section>
+	@include('includes.footer')
+	<div id="fb-root"></div>
+	@include('includes.script')
 	<script type="text/javascript">
 		$(document).ready(function(){
 			scrollToDown('#mission');
@@ -48,5 +58,5 @@
 		    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 		}
 	</script>
-@endsection
-
+</body>
+</html>

@@ -8,7 +8,7 @@ return [
     | You can Globally turn caching on and off for all widgets from here
     |
     */
-    'enable_cache' => false,
+    'enable_cache' => true,
     /*
     |--------------------------------------------------------------------------
     | Default Cache Lifetime
@@ -18,7 +18,7 @@ return [
     | on each and every widget class in your application.
     |
     */
-    'default_cache_lifetime' => 1, //(minutes)
+    'default_cache_lifetime' => 30, //(minutes)
     /*
     |--------------------------------------------------------------------------
     | Minify Widget HTML
@@ -28,7 +28,7 @@ return [
     | * Putting "APP_ENV=production" in .env will forcefully enable minification.
     |
     */
-    'minify_html' => false,
+    'minify_html' => true,
     /*
     |--------------------------------------------------------------------------
     | Debug Mode for Widgets

@@ -1,10 +1,17 @@
-@extends('layouts.master')
-<meta property="og:url"           content="https://baggaonewsportal.herokuapp.com/topography" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Baggao News Information and News Portal" />
-  <meta property="og:description"   content="Topography" />
-  <meta property="og:image"         content="https://baggaonewsportal.herokuapp.com/img/lgu-logo.png" />
-@section('content')
+<!DOCTYPE html>
+<html>
+<head>
+	<meta property="og:url" content="https://baggaonewsportal.herokuapp.com/about/topography">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content=" Topography, Drainage and Physiography" >
+	<meta property="og:description" content="The municipality of Baggao is composed of a mixed topography of plains and valley, hills and mountains.">
+	<meta property="og:image" content="https://baggaonewsportal.herokuapp.com/img/lgu-logo.png" >
+	<meta property="og:image:width" content="300px">
+	<meta property="og:image:height" content="160px">
+	@include('includes.css')
+</head>
+<body>
+	@include('includes.header')
 	<section id="topography">
 	<div class="text-center">
 		<h4 class="text-uppercase">topography - slope</h4>
@@ -40,6 +47,7 @@
 		</div>
 	</div>
 	</section>
+	@include('includes.footer')
 	<script type="text/javascript">
 		$(document).ready(function(){
 			scrollToDown('#topography');
@@ -49,5 +57,5 @@
 		    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 		}
 	</script>
-@endsection
-
+</body>
+</html>

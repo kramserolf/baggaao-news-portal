@@ -1,17 +1,30 @@
-<header id="home" style="background-image: url({{secure_asset('img/background.jpg')}})">
+<!-- Navbar -->
+<div class="w-100"  id="navbar-portal">
+  <nav class="navbar navbar-expand-sm fixed-top navbar-dark " id="navbar-portal">
+     <img src="{{secure_asset('img/format.png')}}">
+  </nav>
+</div>
+<header id="home" style="background-image:linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)) , url({{secure_asset('img/background.png')}})" alt="LGU background">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-sm navbar-dark position-fixed fixed-top mb-4 nav-up" id="navbar-header">
-      <img src="{{secure_asset('img/lgu-logo.png')}}" alt="LGU Baggao Logo" id="lgu-logo" width="60" height="60">
+  <nav class="navbar navbar-expand-sm fixed-bottom nav-up" id="navbar-header">
+    <div>
+      
+    </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-align-justify mr-1 text-white" style="font-size: 25px;"></i>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
      <!-- Right nav -->
-        <ul class="nav navbar-nav ml-auto">
+        <ul class="nav navbar-nav ml-auto mr-auto">
           <li class="nav-item">
             <a class="nav-link text-white" href="{{route('page.home')}}">
               Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="{{route('all.news')}}">
+              Latest News
             </a>
           </li>
           <li class="nav-item dropdown">
