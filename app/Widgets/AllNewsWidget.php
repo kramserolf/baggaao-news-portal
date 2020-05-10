@@ -38,6 +38,6 @@ class AllNewsWidget
     */
 	public function extraCacheKeyDependency($args)
 	{
-        return [/* request('page') */];
+        return [ request('page') ];
 	}
 }
