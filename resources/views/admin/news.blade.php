@@ -155,7 +155,7 @@ $(document).on('click', '.edit', function(){
     success:function(data) {
       $('#updateNewsModal').modal('show');
       $('#hidden_id').val(id);
-      $('#update_load_image').attr('src', '{{secure_secure_asset('storage/images/news/')}}/'+data.result.image);
+      $('#update_load_image').attr('src', '{{secure_asset('storage/images/news/')}}/'+data.result.image);
       $('#update_title').val(data.result.title);
       $('#update_content').val(data.result.content);
    }
