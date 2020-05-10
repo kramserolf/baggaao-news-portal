@@ -25,7 +25,7 @@ class AllReportsWidget
     */
 	public function data()
 	{
-		return Report::latest()
+		return Report::orderBy('id', 'desc')
             ->simplePaginate(10);
 	}
 
