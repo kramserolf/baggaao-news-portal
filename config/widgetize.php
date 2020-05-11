@@ -8,7 +8,7 @@ return [
     | You can Globally turn caching on and off for all widgets from here
     |
     */
-    'enable_cache' => true,
+    'enable_cache' => false,
     /*
     |--------------------------------------------------------------------------
     | Default Cache Lifetime
@@ -28,7 +28,7 @@ return [
     | * Putting "APP_ENV=production" in .env will forcefully enable minification.
     |
     */
-    'minify_html' => true,
+    'minify_html' => false,
     /*
     |--------------------------------------------------------------------------
     | Debug Mode for Widgets

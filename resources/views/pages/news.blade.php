@@ -24,9 +24,9 @@
 				<span class="view-news-title">
 					<strong>{{$news->title}}</strong>
 				</span>
-				<blockquote class="blockquote-footer">{{$news->created_at->format('d/m/Y')}}
+				<blockquote class="blockquote-footer">{{$news->created_at->format('F d, Y g:i a')}}
 				</blockquote>
-				<img src="{{secure_asset('img/news/')}}/{{$news->image}}">
+				<img data-src="{{secure_asset('img/news/')}}/{{$news->image}}" class="lozad">
 				<p class="news-content pt-3 pb-3">
 					{{$news->content}}
 				</p>

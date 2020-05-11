@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 // home view
-// Route::get('/baggao', 'NewsController@news');
 Route::get('/', 'HomepageController@home')->name('page.home');
 
 // Widget All News

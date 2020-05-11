@@ -16,7 +16,7 @@
 					<span class="news-title">
 						{{$row->title}}
 					</span>
-					<blockquote class="blockquote-footer">{{$row->created_at->format('d/m/Y')}}
+					<blockquote class="blockquote-footer">{{$row->created_at->format('F d, Y g:i a')}}
 					</blockquote>
 					<a href="{{$row->content}}" target="_blank" class="btn btn-primary btn-sm">Continue reading<i class="fa fa-arrow-right ml-1"></i></a>
 				</div>

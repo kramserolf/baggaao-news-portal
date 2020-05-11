@@ -29,7 +29,7 @@ class HomepageController extends Controller
     	return view('index', ['news' => $news, 'reports' => $reports, 'announcements' => $announcements]);
     }
     public function viewNews($id){
-    	$news = DB::table('news')->find($id);
+    	$news = News::find($id);
         $announcements = DB::table('announcements')
             ->latest()
             ->limit(3)

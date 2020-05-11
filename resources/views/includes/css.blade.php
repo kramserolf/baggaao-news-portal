@@ -12,3 +12,4 @@
 <link rel="stylesheet" type="text/css" href="{{secure_asset('css/jquery.smartmenus.bootstrap-4.css')}}">
 <!-- custom css -->
 <link rel="stylesheet" type="text/css" href="{{secure_asset('css/style.css')}}">
+<link rel="icon" href="{{ secure_asset('img/favicon.ico') }}" type="image/x-icon"/>

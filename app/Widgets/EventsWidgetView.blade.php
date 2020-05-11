@@ -14,7 +14,7 @@
 				<span class="news-title font-weight-bold">
 					{{$row->title}}
 				</span>
-				<blockquote class="blockquote-footer">{{$row->created_at->format('d/m/Y')}}
+				<blockquote class="blockquote-footer">{{$row->created_at->format('F d, Y')}}
 				</blockquote>
 				<p class="news-content">
 					{{$row->content}}

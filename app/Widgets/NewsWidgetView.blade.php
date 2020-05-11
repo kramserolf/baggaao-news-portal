@@ -16,7 +16,7 @@
 				<span class="news-title">
 					{{$row->title}}
 				</span>
-				<blockquote class="blockquote-footer">{{$row->created_at->format('d/m/Y')}}
+				<blockquote class="blockquote-footer">{{$row->created_at->format('F d, Y g:i a')}}
 				</blockquote>
 				<p class="news-content">
 					{{Str::limit($row->content, $limit = 100, $end = '...')}}
