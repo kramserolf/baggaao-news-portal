@@ -86,7 +86,7 @@ class HomepageController extends Controller
     }
     public function sendMessage(Request $request){
         // First, instantiate the SDK with your API credentials
-        $mg = Mailgun::create('2dbb22684e947ca70b2954bda3b0d451-0afbfc6c-6218b30f'); // For US servers
+        $mg = Mailgun::create('8590d4eaa869c517ec1e28ce54e715d7-3e51f8d2-11326685'); // For US servers
 
         // Now, compose and send your message.
         // $mg->messages()->send($domain, $params);
@@ -99,9 +99,9 @@ class HomepageController extends Controller
             Alert::error('Invalid email', 'Please enter a valid email');
             return redirect()->back()->withInput();
         } else {
-           $mg->messages()->send('sandbox59e39447d8b24ed789376412a8ce9f69.mailgun.org', [
+           $mg->messages()->send('sandboxe47ff2c31dc04a648b2e8e108e6fb5f7.mailgun.org', [
                 'from'    => $request->email,
-                'to'      => 'serolfkram27@gmail.com',
+                'to'      => 'monkeydmarco27@gmail.com',
                 'subject' => $request->subject,
                 'text'    => $request->message
            ]); 
