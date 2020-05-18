@@ -12,7 +12,7 @@
         </div>
         <div class="modal-body">
           <div class="text-center">
-            <img id="load_image" src="{{secure_asset('img/default.jpg')}}" class="img-thumbnail" alt="Report Image" runat="server"  width="125" height="125" style="border: 1px solid; border-color: seagreen; min-width:125px; min-height:125px; max-width:125px; max-height:125px; background-size:cover;">
+            <img id="load_image" src="{{asset('images/default.jpg')}}" class="img-thumbnail" alt="Report Image" runat="server"  width="125" height="125" style="border: 1px solid; border-color: seagreen; min-width:125px; min-height:125px; max-width:125px; max-height:125px; background-size:cover;">
           </div>
           <form>
             <div class="form-group">

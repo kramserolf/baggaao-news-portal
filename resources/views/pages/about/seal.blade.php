@@ -5,7 +5,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Seal Symbolism" >
 	<meta property="og:description" content="logo of the municipality of baggao">
-	<meta property="og:image" content="https://baggaonewsportal.herokuapp.com/img/lgu-logo.png" >
+	<meta property="og:image" content="https://baggaonewsportal.herokuapp.com/images/lgu-logo.png" >
 	<meta property="og:image:width" content="300px">
 	<meta property="og:image:height" content="160px">
 	@include('includes.css')
@@ -25,7 +25,7 @@
 					</div>
 					<div class="card-body">
 						<div class="text-center">
-							<img src="{{secure_asset('img/lgu-logo.png')}}" alt="Logo of Baggao">
+							<img src="{{secure_asset('images/lgu-logo.png')}}" alt="Logo of Baggao">
 						</div>
 					<div class="text-center mt-4">
 					<table class="table table-bordered">
@@ -118,7 +118,7 @@
 	@include('includes.footer')
 	<div id="fb-root"></div>
 	@include('includes.script')
-	<script type="text/javascript" src="{{secure_asset('js/style.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/style.js')}}"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			scrollToDown('#seal');

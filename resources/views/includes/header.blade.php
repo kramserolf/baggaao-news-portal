@@ -1,10 +1,10 @@
 <!-- Navbar -->
 <div class="w-100"  id="navbar-portal">
   <nav class="navbar navbar-expand-sm fixed-top navbar-dark " id="navbar-portal">
-     <img src="{{secure_asset('img/format.png')}}">
+     <img src="{{asset('images/format.png')}}">
   </nav>
 </div>
-<header id="home" style="background-image:linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)) , url({{secure_asset('img/background.png')}})" alt="LGU background">
+<header id="home" style="background-image:linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)) , url({{asset('images/background.png')}})" alt="LGU background">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-sm fixed-bottom nav-up" id="navbar-header">
     <div>

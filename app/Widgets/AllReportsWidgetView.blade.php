@@ -10,7 +10,7 @@
 				@foreach($data as $row)
 				<div class="row border-bottom pb-4 mb-4">
 				<div class="col-sm-5">
-					<img data-src="{{secure_asset('img/reports/')}}/{{$row->image}}" width="240" height="150" class="lozad">
+					<img data-src="{{asset('images/reports/')}}/{{$row->image}}" width="240" height="150" class="lozad">
 				</div>
 				<div class="col-sm-7">
 					<span class="news-title">
@@ -18,7 +18,7 @@
 					</span>
 					<blockquote class="blockquote-footer">{{$row->created_at->format('F d, Y g:i a')}}
 					</blockquote>
-					<a href="{{$row->content}}" target="_blank" class="btn btn-primary btn-sm">Continue reading<i class="fa fa-arrow-right ml-1"></i></a>
+					<a href="{{$row->content}}" target="_blank" class="btn btn-primary btn-sm">Continue on Facebook<i class="fa fa-arrow-right ml-1"></i></a>
 				</div>
 				</div>
 				@endforeach

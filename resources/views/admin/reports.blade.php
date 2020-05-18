@@ -94,7 +94,7 @@ $("#update_image").change(function() {
 // show modal
 $('#add_reports').click(function(){
   $('#reports_form')[0].reset(); 
-  $('#load_image').attr('src', '{{secure_asset('img/default.jpg')}}');
+  $('#load_image').attr('src', '{{asset('images/default.jpg')}}');
   $('#reportsModal').modal('show');
 });
 
@@ -114,7 +114,7 @@ $('#reports_form').on('submit', function(event){
       if (data.success) {
         $('#reports').DataTable().ajax.reload();
         $('#reports_form')[0].reset();
-        $('#load_image').attr('src', '{{secure_asset('storage/images/default.jpg')}}');
+        $('#load_image').attr('src', '{{asset('storage/images/default.jpg')}}');
         alertify.set('notifier','position', 'top-right');
         alertify.success(data.success, 3); 
       }
@@ -156,7 +156,7 @@ $(document).on('click', '.edit', function(){
     success:function(data) {
       $('#updateReportsModal').modal('show');
       $('#hidden_id').val(id);
-      $('#update_load_image').attr('src', '{{secure_asset('storage/images/reports/')}}/'+data.result.image);
+      $('#update_load_image').attr('src', '{{asset('storage/images/reports/')}}/'+data.result.image);
       $('#update_title').val(data.result.title);
       $('#update_content').val(data.result.content);
    }

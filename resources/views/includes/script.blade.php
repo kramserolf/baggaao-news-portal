@@ -3,11 +3,13 @@
 <!-- popper.js -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <!-- bootstrap js -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+{{-- bootstrap bundle --}}
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
 <!-- smartmenu jquery -->
-<script type="text/javascript" src="{{secure_asset('js/jquery.smartmenus.js')}}" defer></script>
+<script type="text/javascript" src="{{asset('js/jquery.smartmenus.js')}}" defer></script>
 <!-- smartmenu bootstrap add on -->
-<script type="text/javascript" src="{{secure_asset('js/jquery.smartmenus.bootstrap-4.js')}}" defer></script>
+<script type="text/javascript" src="{{asset('js/jquery.smartmenus.bootstrap-4.js')}}" defer></script>
 <!-- alertify js -->
 <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 

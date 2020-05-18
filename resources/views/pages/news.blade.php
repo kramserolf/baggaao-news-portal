@@ -5,7 +5,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="{{$news->title}}" >
 	<meta property="og:description" content="{{$news->content}}" >
-	<meta property="og:image" content="https://baggaonewsportal.herokuapp.com/img/news/{{$news->image}}" >
+	<meta property="og:image" content="https://baggaonewsportal.herokuapp.com/images/news/{{$news->image}}" >
 	<meta property="og:image:width" content="300px">
 	<meta property="og:image:height" content="160px">
 	@include('includes.css')
@@ -26,7 +26,7 @@
 				</span>
 				<blockquote class="blockquote-footer">{{$news->created_at->format('F d, Y g:i a')}}
 				</blockquote>
-				<img data-src="{{secure_asset('img/news/')}}/{{$news->image}}" class="lozad">
+				<img data-src="{{asset('images/news/')}}/{{$news->image}}" class="lozad">
 				<p class="news-content pt-3 pb-3">
 					{{$news->content}}
 				</p>
@@ -42,7 +42,7 @@
 	@include('includes.footer')
 	<div id="fb-root"></div>
 	@include('includes.script')
-	<script type="text/javascript" src="{{secure_asset('js/style.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/style.js')}}"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			scrollToDown('#view-news');

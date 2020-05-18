@@ -2,7 +2,7 @@
 	<div class="row">
 		@foreach($data as $row)
 		<div class="col-sm-3">
-			<img data-src="{{secure_asset('img/reports/')}}/{{$row->image}}" width="220" height="150" class="lozad">
+			<img data-src="{{asset('images/reports/')}}/{{$row->image}}" width="220" height="150" class="lozad">
 			<blockquote class="blockquote-footer">{{$row->created_at->format('F d, Y g:i a')}}
 			</blockquote>
 			<a href="{{$row->content}}" class="news-content" data-toggle="tooltip" title="view on facebook">

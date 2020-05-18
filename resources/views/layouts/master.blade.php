@@ -8,6 +8,6 @@
     @include('includes.header')
         @yield('content')
     @include('includes.footer')
-    <script type="text/javascript" src="{{secure_asset('js/style.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/style.js')}}"></script>
 </body>
 </html>

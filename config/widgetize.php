@@ -8,7 +8,7 @@ return [
     | You can Globally turn caching on and off for all widgets from here
     |
     */
-    'enable_cache' => false,
+    'enable_cache' => true,
     /*
     |--------------------------------------------------------------------------
     | Default Cache Lifetime
